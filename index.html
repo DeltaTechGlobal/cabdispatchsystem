@@ -75,6 +75,30 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
 
+    !-- Styles for smoother image and layout similar to Google Play Store icon -->
+<style>
+    .store-link {
+        display: inline-block;
+        margin-top: 10px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .store-link:hover {
+        transform: scale(1.05);
+    }
+
+    .store-img {
+        width: 160px; /* Adjust the width as needed */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        object-fit: contain;
+    }
+</style>
+
 </head>
 <body>
 
@@ -107,6 +131,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#sms-apps">SMS App</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#contact">Contact</a>
@@ -306,7 +333,7 @@
 </section>
 <!-- Features Section End -->
 
-<!-- Start Video promo Section -->
+<!-- Start Driver Apps Section -->
 <section id="driver-apps" class="video-promo section">
     <div class="container">
         <div class="row justify-content-center">
@@ -325,13 +352,12 @@
                             src="img/google-play.png" class="store-img"/> </a>
                     <a href="https://itunes.apple.com/gb/app/cds-driver/id1368691004?mt=8"><img
                             src="img/apple_store.png" class="store-img"/> </a>
-                    <!--<a href="https://www.youtube.com/watch?v=IXoMDwh4Cq8" class="video-popup wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s"><i class="lnr lnr-film-play"></i></a>-->
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- End Video Promo Section -->
+<!-- End VDriver Apps Section -->
 
 <!-- Start Pricing Table Section -->
 <div id="pricing" class="section pricing-section">
@@ -407,6 +433,29 @@
 </div>
 <!-- End Pricing Table Section -->
 
+<!-- Start Driver Apps Section -->
+
+<section id="sms-apps" class="video-promo section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="video-promo-content text-center">
+                    <h2 class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Download SMS Apps</h2>
+                    <p>
+                        To download <strong>Android SMS Gateway</strong> app for Android phones click on the icon here
+                    </p>
+                    <p>
+                        <a href="apps/sms-gateway/app-release-v1-22-0.apk" class="store-link">
+                            <img src="img/android-sms-gateway-logo.png" class="store-img" alt="Download Android SMS Gateway App"/>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End VDriver Apps Section -->
 <!-- Contact Section Start -->
 <section id="contact" class="section" data-stellar-background-ratio="-0.2">
     <div class="contact-form">

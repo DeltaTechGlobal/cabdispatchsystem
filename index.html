@@ -50,7 +50,9 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Cab Dispatch System for Minicab & Private Hire | Manage Your Fleet in the UK">
 <meta property="og:description" content="Looking for a reliable cab dispatch system? Our software simplifies minicab and private hire management in the UK, offering seamless booking, real-time tracking, and efficient dispatch services.">
-<meta property="og:image" content="https://www.cabdispatchsystem.com/img/logo.png">
+<meta property="og:image" content="https://www.cabdispatchsystem.com/img/cds-demo-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
 <meta property="og:url" content="https://www.cabdispatchsystem.com">
 <meta property="og:site_name" content="Your Cab Dispatch Software">
 
@@ -58,7 +60,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Cab Dispatch System for Minicab & Private Hire | Manage Your Fleet in the UK">
 <meta name="twitter:description" content="Efficient and user-friendly cab dispatch system to manage minicab and private hire services across the UK. Enhance your operations with real-time tracking and automated booking.">
-<meta name="twitter:image" content="https://www.cabdispatchsystem.com/img/logo.png">
+<meta name="twitter:image" content="https://www.cabdispatchsystem.com/img/cds-demo-og.jpg">
 
     <title>CDS - Cab Dispatch system | Taxi Software, Taxi Booking Software and Apps</title>
 
@@ -96,6 +98,37 @@
         margin: 0 auto;
         object-fit: contain;
     }
+
+    .btn-demo {
+        border: 1px solid #fff;
+        background: transparent;
+        color: #fff;
+        border-radius: 30px;
+        margin-left: 10px;
+    }
+
+    .btn-demo:hover {
+        color: #fff;
+        background: #61D2B4;
+        border-color: #61D2B4;
+        transition: all .50s ease-in-out;
+    }
+
+    .demo-video video {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        background: #f4f4f5;
+        box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.35);
+    }
+
+    @media (max-width: 575px) {
+        .btn-demo {
+            margin-left: 0;
+            margin-top: 12px;
+        }
+    }
 </style>
 
 </head>
@@ -118,6 +151,9 @@
                 <ul class="navbar-nav mr-auto w-100 justify-content-end">
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#hero-area">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#demo">Demo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#services">Products</a>
@@ -145,6 +181,9 @@
         <ul class="mobile-menu">
             <li>
                 <a class="page-scroll" href="#hero-area">Home</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="#demo">Demo</a>
             </li>
             <li>
                 <a class="page-scroll" href="#services">Services</a>
@@ -177,12 +216,40 @@
                         tracking.</p>
                     <a href="#contact" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms"
                        data-wow-delay="400ms">Request Free Demo</a>
+                    <a href="#demo" class="btn btn-demo page-scroll wow fadeInUp" data-wow-duration="1000ms"
+                       data-wow-delay="400ms">Watch the demo</a>
                 </div>
             </div>
         </div>
     </div>
 </header>
 <!-- Header Section End -->
+
+<!-- Demo Section Start -->
+<section id="demo" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">See CDS in action</h2>
+            <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+            <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">
+                One phone call, start to finish: take the booking, set the route and fixed fare on the map, assign a
+                driver on the live board, and the rider gets a text.
+            </p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="demo-video wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s">
+                    <video controls preload="none" playsinline poster="img/cds-demo-poster.jpg" width="1920" height="1080"
+                           aria-label="CDS demo: booking a ride, dispatching a driver and texting the rider">
+                        <source src="video/cds-demo.mp4" type="video/mp4">
+                        <a href="video/cds-demo.mp4">Download the CDS demo video</a>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Demo Section End -->
 
 <!-- Services Section Start -->
 <section id="services" class="section">

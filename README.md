@@ -30,7 +30,7 @@ The current page's link is marked with `aria-current="page"`.
 
 ## Google Analytics
 
-GA4 loads only after a visitor accepts analytics cookies. The measurement ID is `GA_ID` at the top of `assets/site.js`. While it is the placeholder `G-XXXXXXXXXX`, nothing is loaded and no cookie banner is shown.
+GA4 loads only after a visitor accepts analytics cookies. The measurement ID is `GA_ID` at the top of `assets/site.js`, currently `G-FD7YFQ0GYM`. While it is the placeholder `G-XXXXXXXXXX`, nothing is loaded and no cookie banner is shown.
 
 ## Contact form
 

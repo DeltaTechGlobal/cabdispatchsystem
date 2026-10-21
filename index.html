@@ -1,698 +1,563 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-GB">
 <head>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118883780-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-118883780-1');
-    </script>
-
-    <!-- favicon section -->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <meta name="keywords" content="cab dispatch system, CDS, Cab Dispatch System, Minicab Management Software, Cab Booking Software, Private Hire Software, Cab Despatch System, Taxi Dispatch, Minicab System, Taxi booking System, Minicab PDA, Cab Management System, Cab System Uk, Cab System London, Taxi Management System, taxi, cabs, Taxi Software, Taxi Booking Software and Apps, Driver PDA App, taxi driver app, Taxi dispatch software, Taxi mobile App, Taxi Booking app and website, Vehicle Tracking, Private Hire Management, Minicab Dispatch System">
-    <meta name="author" content="Cab Dispatch System">
-    <meta name="robots" content="index,follow">
-    <link rel="canonical" href="https://www.cabdispatchsystem.com">
-
-    <meta name="description"
-          content="Cab Dispatch System (CDS) is a comprehensive and a complete Taxi Booking and Dispatch management system. It is fast, efficient and reliable as your business grow."/>
-    <meta name="DC.title"
-          content="Cab Dispatch System (CDS) is a comprehensive and a complete Taxi Booking and Dispatch management system. It is fast, efficient and reliable as your business grow."/>
-
-          <!-- Open Graph / Facebook -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cab Dispatch System for UK Minicab &amp; Private Hire | CDS</title>
+<meta name="description" content="CDS is cloud taxi booking and dispatch software for UK minicab and private hire offices: fixed fares, live dispatch board, SMS, online booking and PCO returns.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.cabdispatchsystem.com/">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="manifest" href="/favicon/manifest.json">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Cab Dispatch System for Minicab & Private Hire | Manage Your Fleet in the UK">
-<meta property="og:description" content="Looking for a reliable cab dispatch system? Our software simplifies minicab and private hire management in the UK, offering seamless booking, real-time tracking, and efficient dispatch services.">
+<meta property="og:site_name" content="Cab Dispatch System (CDS)">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="CDS: the cab dispatch system for UK minicab and private hire offices">
+<meta property="og:description" content="CDS is cloud taxi booking and dispatch software for UK minicab and private hire offices: fixed fares, live dispatch board, SMS, online booking and PCO returns.">
+<meta property="og:url" content="https://www.cabdispatchsystem.com/">
 <meta property="og:image" content="https://www.cabdispatchsystem.com/img/cds-demo-og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
-<meta property="og:url" content="https://www.cabdispatchsystem.com">
-<meta property="og:site_name" content="Your Cab Dispatch Software">
-
-<!-- Twitter -->
+<meta property="og:image:alt" content="The CDS Book a ride screen with a fixed fare on the map">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Cab Dispatch System for Minicab & Private Hire | Manage Your Fleet in the UK">
-<meta name="twitter:description" content="Efficient and user-friendly cab dispatch system to manage minicab and private hire services across the UK. Enhance your operations with real-time tracking and automated booking.">
+<meta name="twitter:title" content="CDS: the cab dispatch system for UK minicab and private hire offices">
+<meta name="twitter:description" content="CDS is cloud taxi booking and dispatch software for UK minicab and private hire offices: fixed fares, live dispatch board, SMS, online booking and PCO returns.">
 <meta name="twitter:image" content="https://www.cabdispatchsystem.com/img/cds-demo-og.jpg">
-
-    <title>CDS - Cab Dispatch system | Taxi Software, Taxi Booking Software and Apps</title>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/line-icons.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <link rel="stylesheet" href="css/nivo-lightbox.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/slicknav.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
-<style>
-    .store-link {
-        display: inline-block;
-        margin-top: 10px;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s ease-in-out;
-    }
-
-    .store-link:hover {
-        transform: scale(1.05);
-    }
-
-    .store-img {
-        width: 160px; /* Adjust the width as needed */
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        object-fit: contain;
-    }
-
-    .btn-demo {
-        border: 1px solid #fff;
-        background: transparent;
-        color: #fff;
-        border-radius: 30px;
-        margin-left: 10px;
-    }
-
-    .btn-demo:hover {
-        color: #fff;
-        background: #61D2B4;
-        border-color: #61D2B4;
-        transition: all .50s ease-in-out;
-    }
-
-    .demo-video video {
-        display: block;
-        width: 100%;
-        height: auto;
-        border-radius: 12px;
-        background: #f4f4f5;
-        box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.35);
-    }
-
-    @media (max-width: 575px) {
-        .btn-demo {
-            margin-left: 0;
-            margin-top: 12px;
-        }
-    }
-</style>
-
+<link rel="preload" href="/assets/fonts/barlow-semi-condensed-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="/assets/img/step-book.webp" fetchpriority="high" media="(max-width: 600px)">
+<link rel="preload" as="image" href="/assets/img/book-a-ride.webp" fetchpriority="high" media="(min-width: 601px)">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://www.cabdispatchsystem.com/#org",
+   "name": "Cab Dispatch System",
+   "alternateName": "CDS",
+   "url": "https://www.cabdispatchsystem.com/",
+   "logo": "https://www.cabdispatchsystem.com/img/logo.png",
+   "email": "cds@deltatechglobal.co.uk",
+   "foundingDate": "2010",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Worcester Park",
+    "addressRegion": "London",
+    "addressCountry": "GB"
+   },
+   "sameAs": [
+    "https://www.youtube.com/@CabDispatchSystem"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://www.cabdispatchsystem.com/#website",
+   "url": "https://www.cabdispatchsystem.com/",
+   "name": "Cab Dispatch System (CDS)",
+   "inLanguage": "en-GB",
+   "publisher": {
+    "@id": "https://www.cabdispatchsystem.com/#org"
+   }
+  },
+  {
+   "@type": "SoftwareApplication",
+   "name": "CDS Cab Dispatch System",
+   "applicationCategory": "BusinessApplication",
+   "applicationSubCategory": "Taxi and minicab booking and dispatch software",
+   "operatingSystem": "Web browser",
+   "url": "https://app.cabdispatchsystem.com",
+   "description": "Cloud booking and dispatch system for UK minicab and private hire offices: phone bookings with fixed fares and mileage rates, a live dispatch board, SMS and email notifications, online booking, caller ID, account invoicing, driver pay and TfL PCO weekly returns.",
+   "publisher": {
+    "@id": "https://www.cabdispatchsystem.com/#org"
+   },
+   "screenshot": "https://www.cabdispatchsystem.com/assets/img/book-a-ride.webp"
+  },
+  {
+   "@type": "VideoObject",
+   "name": "CDS: from phone call to cab in one portal",
+   "description": "A 30-second tour of CDS: booking a ride with a fixed fare, dispatching a driver, texting the passenger, then online booking, the fare grid, late-job alerts and driver pay.",
+   "thumbnailUrl": "https://www.cabdispatchsystem.com/img/cds-demo-poster.jpg",
+   "contentUrl": "https://www.cabdispatchsystem.com/video/cds-demo.mp4",
+   "uploadDate": "2026-10-16",
+   "duration": "PT30S",
+   "inLanguage": "en-GB"
+  }
+ ]
+}</script>
 </head>
 <body>
-
-<!-- Header Section Start -->
-<header id="hero-area" data-stellar-background-ratio="0.5">
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a href="index.html" class="navbar-brand"><img class="img-fulid" src="img/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
-                        aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="lnr lnr-menu"></i>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="main-navbar">
-                <ul class="navbar-nav mr-auto w-100 justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#hero-area">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#demo">Demo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#services">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#features">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#driver-apps">Driver Apps</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#pricing">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#sms-apps">SMS App</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Mobile Menu Start -->
-        <ul class="mobile-menu">
-            <li>
-                <a class="page-scroll" href="#hero-area">Home</a>
-            </li>
-            <li>
-                <a class="page-scroll" href="#demo">Demo</a>
-            </li>
-            <li>
-                <a class="page-scroll" href="#services">Services</a>
-            </li>
-            <li>
-                <a class="page-scroll" href="#features">Features</a>
-            </li>
-            <li>
-                <a class="page-scroll" href="#driver-apps">Driver Apps</a>
-            </li>
-            <li>
-                <a class="page-scroll" href="#pricing">Pricing</a>
-            </li>
-            <li>
-                <a class="page-scroll" href="#contact">Contact</a>
-            </li>
-        </ul>
-        <!-- Mobile Menu End -->
-
+<!-- shared: header -->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/" aria-label="CDS Cab Dispatch System, home"><svg viewBox="80 50 1760 470" width="82" height="22" role="img" aria-label="CDS"><g fill="#E81A22" fill-rule="evenodd"><path d="M610,72.5 H345 A243,188.75 0 0 0 345,450 H610 V369 H375 A147,106.5 0 0 1 375,156 H610 Z"/><path d="M626,72.5 H985 A225,188.75 0 0 1 985,450 H626 Z M754,156 V369 H985 A109,106.5 0 0 0 985,156 Z"/><path d="M1819,72.5 H1500 A269,189.5 0 0 0 1231,262 H1356 A144,106 0 0 1 1500,156 H1819 Z"/><path d="M1231,450 H1550 A269,188 0 0 0 1819,262 H1694 A144,107 0 0 1 1550,369 H1231 Z"/></g><g fill="#00A9EC"><ellipse cx="1527" cy="262" rx="84" ry="51"/><ellipse cx="244" cy="472" rx="15" ry="8" opacity=".4"/><ellipse cx="319" cy="490" rx="20" ry="10" opacity=".55"/><ellipse cx="419" cy="502" rx="31" ry="17" opacity=".75"/><ellipse cx="531" cy="505" rx="44" ry="23"/></g></svg><span class="brand-name">Cab Dispatch System</span></a>
+    <nav class="nav" aria-label="Main">
+      <ul class="nav-links">
+        <li><details class="nav-menu"><summary>Features <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary><ul class="nav-menu-panel"><li><a href="/taxi-dispatch-software/"><strong>Dispatch board</strong><span>Queue, assign, recall, late-job alerts</span></a></li><li><a href="/minicab-booking-software/"><strong>Book a ride</strong><span>Phone bookings priced on the map</span></a></li><li><a href="/fixed-fares-software/"><strong>Fixed fares</strong><span>Postcodes, airports, stations, fare grid</span></a></li><li><a href="/online-taxi-booking/"><strong>Online booking</strong><span>Your own booking page and widget</span></a></li><li><a href="/taxi-caller-id/"><strong>Caller ID</strong><span>Know who's calling before you answer</span></a></li><li><a href="/taxi-sms-notifications/"><strong>Texts and emails</strong><span>In your words, from your provider</span></a></li><li><a href="/pco-returns-driver-compliance/"><strong>PCO returns and paperwork</strong><span>TfL returns, documents, driver pay, invoices</span></a></li></ul></details></li>
+        <li><a href="/#demo">Demo</a></li>
+        <li><a href="/#pricing">Pricing</a></li>
+        <li><a href="/faq/">FAQ</a></li>
+        <li><a href="/#driver-apps">Apps</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a class="nav-signin" href="https://app.cabdispatchsystem.com">Sign in</a>
+        <a class="btn btn--red btn--small" href="/#contact">Book a demo</a>
+      </div>
     </nav>
-    <!-- Navbar End -->
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="col-md-10">
-                <div class="contents text-center">
-                    <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">CDS - Cab Dispatch
-                        System</h1>
-                    <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">A booking and dispatch
-                        system from anywhere in the world. iPhone & Android driver and booking apps with real time
-                        tracking.</p>
-                    <a href="#contact" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms"
-                       data-wow-delay="400ms">Request Free Demo</a>
-                    <a href="#demo" class="btn btn-demo page-scroll wow fadeInUp" data-wow-duration="1000ms"
-                       data-wow-delay="400ms">Watch the demo</a>
-                </div>
-            </div>
+    <details class="menu-toggle">
+      <summary><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menu</span></summary>
+      <nav class="mobile-panel" aria-label="Main menu">
+        <ul>
+          <li class="mobile-group">Features</li>
+          <li><a href="/taxi-dispatch-software/">Dispatch board</a></li><li><a href="/minicab-booking-software/">Book a ride</a></li><li><a href="/fixed-fares-software/">Fixed fares</a></li><li><a href="/online-taxi-booking/">Online booking</a></li><li><a href="/taxi-caller-id/">Caller ID</a></li><li><a href="/taxi-sms-notifications/">Texts and emails</a></li><li><a href="/pco-returns-driver-compliance/">PCO returns and paperwork</a></li>
+          <li class="mobile-group">More</li>
+          <li><a href="/#demo">Watch the demo</a></li>
+          <li><a href="/#pricing">Pricing</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="/#driver-apps">Driver and SMS apps</a></li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn--red" href="/#contact">Book a demo</a>
+          <a class="btn btn--ghost" href="https://app.cabdispatchsystem.com">Sign in</a>
         </div>
-    </div>
+      </nav>
+    </details>
+  </div>
 </header>
-<!-- Header Section End -->
-
-<!-- Demo Section Start -->
-<section id="demo" class="section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">See CDS in action</h2>
-            <hr class="lines wow zoomIn" data-wow-delay="0.3s">
-            <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">
-                One phone call, start to finish: take the booking, set the route and fixed fare on the map, assign a
-                driver on the live board, and the rider gets a text. Then the rest of the office: customers booking
-                online, a whole grid of fixed fares, late-job alerts and driver pay.
-            </p>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <div class="demo-video wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s">
-                    <video controls preload="none" playsinline poster="img/cds-demo-poster.jpg" width="1920" height="1080"
-                           aria-label="CDS demo: booking a ride, dispatching a driver, texting the rider, then online booking, the fare grid, late-job alerts and driver pay">
-                        <source src="video/cds-demo.mp4" type="video/mp4">
-                        <a href="video/cds-demo.mp4">Download the CDS demo video</a>
-                    </video>
-                </div>
-            </div>
-        </div>
+<!-- /shared: header -->
+<main id="main">
+<section class="hero" id="hero-area">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Phone rings. <em>Cab’s on the way.</em></h1>
+      <p class="lede">CDS is the cab dispatch system for UK minicab and private hire offices. Take the booking, price it, send a driver and text the passenger, all in your web browser.</p>
+      <div class="actions">
+        <a class="btn btn--red" href="#contact">Book a demo</a>
+        <a class="btn btn--ghost" href="#demo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M10 8.5l6 3.5-6 3.5z" fill="currentColor" stroke="none"/></svg>Watch the 30-second demo</a>
+      </div>
+      <ul class="hero-facts">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Runs in your browser, nothing to install</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Uses your own SMS and email</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Serving UK offices since 2010</li>
+      </ul>
     </div>
-</section>
-<!-- Demo Section End -->
-
-<!-- Services Section Start -->
-<section id="services" class="section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Product Options</h2>
-            <hr class="lines wow zoomIn" data-wow-delay="0.3s">
-            <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">
-                CDS is a software for taxi, private hire and fleet management, offering full-featured solution for
-                dispatching, billing and fleet management.
-            </p>
+    <div class="hero-visual">
+      <div class="call-card" aria-hidden="true">
+        <div class="call-top">
+          <span class="call-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+          <div><div class="call-title">Incoming call · Main line</div><div class="call-state">Ringing</div></div>
         </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-6">
-                <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
-                    <div class="icon">
-                        <i class="lnr lnr-cloud-check"></i>
-                    </div>
-                    <h4>Booking & Dispatch System</h4>
-                    <p>Easy bookings, auto pricing, track drivers in real time, fairly distribute jobs and use your own
-                        VoIP service for Caller ID recognition.</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="item-boxes wow fadeInDown" data-wow-delay="0.8s">
-                    <div class="icon">
-                        <i class="lnr lnr-smartphone"></i>
-                    </div>
-                    <h4>Driver & Booking Apps</h4>
-                    <p>Offer your drivers more ways to accept jobs, integrated auto navigation with Google, Waze and ios
-                        Maps.</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="item-boxes wow fadeInDown" data-wow-delay="1.2s">
-                    <div class="icon">
-                        <i class="lnr lnr-code"></i>
-                    </div>
-                    <h4>API Integration</h4>
-                    <p>Provide API Integration with most thirdy party features and functions.</p>
-                </div>
-            </div>
+        <div class="call-body">
+          <div class="call-number">07700 900461</div>
+          <div class="call-who">Returning customer · Hannah Clarke · 2 trips</div>
+          <span class="call-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 17h14M6 17v2M18 17v2M3 13l2-5a2 2 0 0 1 1.9-1.4h10.2A2 2 0 0 1 19 8l2 5v4H3z"/><circle cx="7.5" cy="13.5" r=".5" fill="currentColor"/><circle cx="16.5" cy="13.5" r=".5" fill="currentColor"/></svg>Book a ride</span>
         </div>
+      </div>
+      <div class="frame">
+        <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i><span>app.cabdispatchsystem.com</span></div>
+        <picture><source media="(max-width: 600px)" srcset="/assets/img/step-book.webp" width="404" height="778"><img src="/assets/img/book-a-ride.webp" fetchpriority="high" width="1440" height="900" alt="CDS Book a ride screen: a returning customer found by phone number, a trip from London Kings Cross to Stansted Airport on the map with live traffic, and a £75 fixed fare"></picture>
+      </div>
+      <div class="sms" aria-hidden="true">
+        <div class="sms-head"><span class="sms-avatar">AC</span><div class="sms-from">Alpha Cabs<small>Text message · now</small></div></div>
+        <p class="sms-bubble">Hi Hannah, Marcus Bell is on the way to London Kings Cross Rail Station in a Toyota Corolla Hybrid <span class="plate">LB23 KXT</span>. Booking C79518A8, Alpha Cabs. See your driver: <span class="sms-link">app.cabdispatchsystem.com/d/7Hq2mXk4Pa</span></p>
+      </div>
+      <p class="hero-caption">Real screens, sample data.</p>
     </div>
-</section>
-<!-- Services Section End -->
-
-<!-- Features Section Start -->
-<section id="features" class="section" data-stellar-background-ratio="0.2">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Some Features</h2>
-            <hr class="lines">
-            <p class="section-subtitle">
-                Cab Dispatch System is a fully functional professional system for minicab offices across UK. CDS comes with PDA systems for smartphones (iPhone & Android), SMS texts to clients/drivers and detailed reporting for accounts and drivers to evaluate success in your business.
-                <br> Request a demo today & get your booking and dispatch system a much needed upgrade.</p>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 col-md-12 col-xs-12">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
-                    <span class="icon">
-                      <i class="lnr lnr-smartphone"></i>
-                    </span>
-                            <div class="text">
-                                <h4>Driver Smart Apps</h4>
-                                <p>Driver apps are available for both Android and iPhone devices.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
-                    <span class="icon">
-                      <i class="lnr lnr-laptop-phone"></i>
-                    </span>
-                            <div class="text">
-                                <h4>Easy to Customize</h4>
-                                <p>Fully customisable and scalable solution, build on modular approach.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
-                    <span class="icon">
-                      <i class="lnr lnr-layers"></i>
-                    </span>
-                            <div class="text">
-                                <h4>Smart SMS Service</h4>
-                                <p>A smart SMS service for notifications like, booking confirmation, dispatch to driver
-                                    & customer, driver at pick up etc.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
-                    <span class="icon">
-                      <i class="lnr lnr-cog"></i>
-                    </span>
-                            <div class="text">
-                                <h4>Auto Dispatch</h4>
-                                <p>Flexible and configurable auto dispatch based on various parameters.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
-                    <span class="icon">
-                      <i class="lnr lnr-book"></i>
-                    </span>
-                            <div class="text">
-                                <h4>Performance Report</h4>
-                                <p>Comprehensive reporting options for drivers, operators and auto generates weekly PCO
-                                    reports.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
-                    <span class="icon">
-                      <i class="lnr lnr-map"></i>
-                    </span>
-                            <div class="text">
-                                <h4>Pricing Models</h4>
-                                <p>Comprehensive and fully customisable pricing models, integrated with goolge maps and
-                                    live traffic data.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
-                    <span class="icon">
-                      <i class="lnr lnr-briefcase"></i>
-                    </span>
-                            <div class="text">
-                                <h4>Invoicing</h4>
-                                <p>Account and driver invoicing</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
-                    <span class="icon">
-                      <i class="lnr lnr-phone-handset"></i>
-                    </span>
-                            <div class="text">
-                                <h4>Caller ID</h4>
-                                <p>Supports most of variant Phone Systems – Analog/Digital/VOIP etc.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-xs-12">
-                <div class="show-box">
-                    <img class="img-fulid" src="img/features/feature.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Features Section End -->
-
-<!-- Start Driver Apps Section -->
-<section id="driver-apps" class="video-promo section">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="video-promo-content text-center">
-                    <h2 class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Download our driver
-                        app</h2>
-                    <p class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">
-                        Free and unlimited driver app for Android users is available on Google play store, iPhone can
-                        download app from iTunes store free as well.
-                    </p>
-                    <!-- <p>
-                        To download <strong>Smart SMS</strong> app for Android phones click here <a href="apps/cds-sms-app-release.apk"><img src="img/sms_app_download.png"/> </a>
-                    </p> -->
-                    <a href="https://play.google.com/store/apps/details?id=com.cds.cab.driver"><img
-                            src="img/google-play.png" class="store-img"/> </a>
-                    <a href="https://itunes.apple.com/gb/app/cds-driver/id1368691004?mt=8"><img
-                            src="img/apple_store.png" class="store-img"/> </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End VDriver Apps Section -->
-
-<!-- Start Pricing Table Section -->
-<div id="pricing" class="section pricing-section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Pricing</h2>
-            <hr class="lines">
-            <p class="section-subtitle">Price will vary depending upon the individual needs. We aim to provide the
-                competitive prices while no compromise on the quality of service. To get a quote please contact us on
-                the details provided and our sales team will get back to you.</p>
-        </div>
-        <!-- THIS WILL BE UPDATED ONCE PRICE PLANS FINALISED -->
-        <div class="row pricing-tables">
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="pricing-table">
-                    <div class="pricing-details">
-                        <h2>Express</h2>
-                        <!--<span>From £25 PCM</span>-->
-                        <ul>
-                            <li>Unlimited drivers (no PDA)</li>
-                            <li>SMS service integration</li>
-                            <li>Picture service integration</li>
-                            <li>Caller Id integration</li>
-                            <li>Data backups locally</li>
-                        </ul>
-                    </div>
-                    <div class="plan-button">
-                        <a href="#contact" class="btn btn-common">Get Quote</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="pricing-table">
-                    <div class="pricing-details">
-                        <h2>Popular</h2>
-                        <!--<span>£25.00 PCM</span>-->
-                        <ul>
-                            <li>Unlimited drivers (20 PDA)</li>
-                            <li>SMS service integration</li>
-                            <li>Picture service integration</li>
-                            <li>Caller Id integration</li>
-                            <li>Data backups locally</li>
-                        </ul>
-                    </div>
-                    <div class="plan-button">
-                        <a href="#contact" class="btn btn-common">Get Quote</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="pricing-table">
-                    <div class="pricing-details">
-                        <h2>Premium</h2>
-                        <!--<span>$9.50</span>-->
-                        <ul>
-                            <li>Unlimited drivers (50 PDA)</li>
-                            <li>SMS service integration</li>
-                            <li>Picture service integration</li>
-                            <li>Caller Id integration</li>
-                            <li>Data backups on cloud</li>
-                        </ul>
-                    </div>
-                    <div class="plan-button">
-                        <a href="#contact" class="btn btn-common">Get Quote</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-<!-- End Pricing Table Section -->
-
-<!-- Start Driver Apps Section -->
-
-<section id="sms-apps" class="video-promo section">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <class class="video-promo-content text-center">
-                    <h2 class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Download SMS Apps</h2>
-                    <p>
-                        To download <strong>Android SMS Gateway</strong> app for Android phones click on the icon here
-                    </p>
-                    <p>
-                        <a href="apps/sms-gateway/app-release-v1-22-0.apk" class="store-link">
-                            <img src="img/android-sms-gateway-logo.png" class="store-img" alt="Download Android SMS Gateway App"/>
-                        </a> 
-                    </p>
-                    <p>Here are instruction to setup SMS app: <a href="sms-gateway.html" alt="SMS Setup Guide"><strong> Setup Guide </strong></a></p>
-                    </class>
-                </div>
-            </div>
-        </div>
-    </div>
+  </div>
 </section>
 
-<!-- End VDriver Apps Section -->
-<!-- Contact Section Start -->
-<section id="contact" class="section" data-stellar-background-ratio="-0.2">
-    <div class="contact-form">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-6 col-xs-12">
-                    <div class="contact-us">
-                        <h3>Contact us</h3>
-                        <div class="contact-address">
-                            <p class="phone">Address: <span>The Hamptons, Worcester Park, London, UK </span></p>
-                            <p class="email">E-mail: <span>cds@deltatechglobal.co.uk</span></p>
-                            <p class="phone">WhatsApp(Message): <span>(+44 7778675286)</span></p>
-                        </div>
-                        <div class="social-icons">
-                            <ul>
-                                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li class="dribbble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-sm-6 col-xs-12">
-                    <div class="contact-block">
-                        <form id="contactForm" action="https://formspree.io/f/xbljjnde" method="POST">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="name" name="name"
-                                               placeholder="Your Name" required data-error="Please enter your name">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Your Email" id="email" class="form-control"
-                                               name="name" required data-error="Please enter your email">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control" id="message" name="message" placeholder="Your Message" rows="8"
-                                                  data-error="Write your message" required></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                    <div class="submit-button text-center">
-                                        <button class="btn btn-common" id="submit" type="submit">Send Message</button>
-                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+<section class="section" id="how-it-works">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>From call to cab, in one taxi booking and dispatch system</h2>
+      <p>Every job runs the same way, whether the passenger rings, books online or is one of your account customers.</p>
     </div>
+    <div class="steps">
+      <ol class="steps-list">
+        <li class="step" data-step="book" data-label="Book a ride">
+          <span class="step-num">1</span>
+          <h3>Book it while they’re on the phone</h3>
+          <p>Type the caller’s number and CDS finds them. Pick the pickup and drop-off and the route appears on the map with live traffic. The price comes from your own fixed fares or mileage rates.</p>
+          <ul>
+            <li>Returning customers found by phone number</li>
+            <li>Luggage, baby, child and booster seats, flight number</li>
+            <li>Book now, or schedule it for later</li>
+          </ul>
+          <div class="step-shot frame frame--flat"><img src="/assets/img/step-book.webp" width="404" height="778" loading="lazy" alt="Book a ride with a fixed fare of £75 from Kings Cross to Stansted Airport"></div>
+        </li>
+        <li class="step" data-step="dispatch" data-label="Dispatch board">
+          <span class="step-num">2</span>
+          <h3>Send a driver from the board</h3>
+          <p>Upcoming jobs, drivers waiting in the queue and drivers on a job, side by side. Choose a driver and click Assign. Only drivers whose vehicle can take the booking are offered.</p>
+          <ul>
+            <li>Drivers queue as they call in free</li>
+            <li>Scheduled jobs go live before pickup</li>
+            <li>Recall a job, or mark it finished</li>
+          </ul>
+          <div class="step-shot frame frame--flat"><img src="/assets/img/step-dispatch.webp" width="520" height="560" loading="lazy" alt="The CDS dispatch board with a job on the way to Stansted and upcoming jobs waiting"></div>
+        </li>
+        <li class="step" data-step="notify" data-label="The passenger’s text, and a late-job alert in the bell">
+          <span class="step-num">3</span>
+          <h3>Everyone hears about it, nothing goes late</h3>
+          <p>The passenger gets a text in your office’s own words, with a link showing the driver’s photo and car. The driver gets the job by text. If a job has nobody on it, CDS rings a chime, says it out loud and shows it in the bell.</p>
+          <ul>
+            <li>Booking confirmed, driver on the way, driver arriving, receipt</li>
+            <li>Customer replies land in your inbox</li>
+            <li>Late-job alerts as banners, sound, voice and desktop notifications</li>
+          </ul>
+          <div class="step-shot frame frame--flat"><img src="/assets/img/step-notify.webp" width="460" height="360" loading="lazy" alt="A late job alert in the CDS notification bell with an Assign driver button"></div>
+          <div class="sms step-sms" aria-hidden="true">
+        <div class="sms-head"><span class="sms-avatar">AC</span><div class="sms-from">Alpha Cabs<small>Text message · now</small></div></div>
+        <p class="sms-bubble">Hi Hannah, Marcus Bell is on the way to London Kings Cross Rail Station in a Toyota Corolla Hybrid <span class="plate">LB23 KXT</span>. Booking C79518A8, Alpha Cabs. See your driver: <span class="sms-link">app.cabdispatchsystem.com/d/7Hq2mXk4Pa</span></p>
+      </div>
+        </li>
+        <li class="step" data-step="settle" data-label="Driver pay">
+          <span class="step-num">4</span>
+          <h3>Settle up at the end of the week</h3>
+          <p>Driver pay works out what each driver earned, what the office kept and who owes whom once cash is set against card and account fares. Settle it, print the statement or text and email it.</p>
+          <ul>
+            <li>Commission per driver or office-wide</li>
+            <li>Statements sent every Monday if you like</li>
+            <li>Account invoices with VAT, and the TfL weekly return</li>
+          </ul>
+          <div class="step-shot frame frame--flat"><img src="/assets/img/step-settle.webp" width="640" height="470" loading="lazy" alt="The CDS Driver pay page showing gross fares, office commission and what is owed to each driver"></div>
+        </li>
+      </ol>
+      <div class="steps-stage" aria-hidden="true">
+        <div class="frame stage-frame" data-stage>
+          <div class="frame-bar"><i></i><i></i><i></i><span>app.cabdispatchsystem.com</span></div>
+          <img data-shot="book" class="is-active" src="/assets/img/book-a-ride.webp" width="1440" height="900" alt="">
+          <img data-shot="dispatch" src="/assets/img/dispatch-board.webp" width="1440" height="900" loading="lazy" alt="">
+          <div data-shot="notify" class="stage-layer"><img src="/assets/img/late-job-alert.webp" width="1440" height="900" loading="lazy" alt=""><div class="sms stage-sms" aria-hidden="true">
+        <div class="sms-head"><span class="sms-avatar">AC</span><div class="sms-from">Alpha Cabs<small>Text message · now</small></div></div>
+        <p class="sms-bubble">Hi Hannah, Marcus Bell is on the way to London Kings Cross Rail Station in a Toyota Corolla Hybrid <span class="plate">LB23 KXT</span>. Booking C79518A8, Alpha Cabs. See your driver: <span class="sms-link">app.cabdispatchsystem.com/d/7Hq2mXk4Pa</span></p>
+      </div></div>
+          <img data-shot="settle" src="/assets/img/driver-pay.webp" width="1440" height="900" loading="lazy" alt="">
+        </div>
+        <p class="stage-label"><span data-stage-label>Book a ride</span> · sample data</p>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Contact Section End -->
 
-<!-- Footer Section Start -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <!-- Footer Links -->
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-                <ul class="footer-links">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#services">Products</a>
-                    </li>
-                    <li>
-                        <a href="#features">Features</a>
-                    </li>
-                    <li>
-                        <a href="#driver-apps">Driver Apps</a>
-                    </li>
-                    <li>
-                        <a href="#sms-apps">SMS Apps</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-                <div class="copyright">
-                    <p>All copyrights reserved &copy; 2010 - 2024 Cab Dispatch System</p>
-                </div>
-            </div>
-        </div>
+<section class="section section--ink" id="demo">
+  <div class="wrap demo-grid">
+    <div>
+      <h2>See a whole job in 30 seconds</h2>
+      <p>One phone call, start to finish: take the booking, set the route and fixed fare on the map, assign a driver on the live board, and the passenger gets a text. Then the rest of the office: online booking, a grid of fixed fares, late-job alerts and driver pay.</p>
+      <div class="actions">
+        <a class="btn btn--outline-light" href="https://www.youtube.com/@CabDispatchSystem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M10 8.5l6 3.5-6 3.5z" fill="currentColor" stroke="none"/></svg>33 how-to videos on YouTube</a>
+      </div>
     </div>
+    <div class="video-frame">
+      <video controls preload="none" playsinline poster="/img/cds-demo-poster.jpg" width="1920" height="1080" aria-label="CDS demo: booking a ride, dispatching a driver, texting the passenger, then online booking, the fare grid, late-job alerts and driver pay">
+        <source src="/video/cds-demo.mp4" type="video/mp4">
+        <a href="/video/cds-demo.mp4">Download the CDS demo video (MP4)</a>
+      </video>
+    </div>
+  </div>
+</section>
+
+<section class="section section--panel" id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Everything a minicab office runs on</h2>
+      <p>The jobs between the phone calls are in CDS too: prices, online bookings, texts, accounts, drivers’ paperwork and the numbers at the end of the month.</p>
+    </div>
+    <div class="mosaic">
+      <a class="tile tile--wide" href="/fixed-fares-software/">
+        <div class="tile-text">
+          <h3>Fixed fares by postcode and place</h3>
+          <p>Price airports, stations and postcode districts in one grid, paste from a spreadsheet, and let mileage rates cover the rest.</p>
+          <span class="text-link">Fixed fares</span>
+        </div>
+        <div class="tile-shot"><img src="/assets/img/crop-fare-grid.webp" width="880" height="550" loading="lazy" alt="The CDS fare grid: Stansted, Luton and City airports against central London postcode districts"></div>
+      </a>
+      <a class="tile tile--narrow tile--sky" href="/online-taxi-booking/">
+        <div class="tile-text">
+          <h3>Bookings from your own website</h3>
+          <p>A booking page in your name and colours. Customers confirm their mobile with a texted code and the job lands on your board marked Web.</p>
+          <span class="text-link">Online booking</span>
+        </div>
+        <div class="tile-shot"><img src="/assets/img/crop-web-booking-page.webp" width="1040" height="650" loading="lazy" alt="An office's online booking page asking Where to? with a map of London"></div>
+      </a>
+      <a class="tile tile--third tile--ink" href="/taxi-caller-id/">
+        <div class="tile-text">
+          <h3>Caller ID</h3>
+          <p>See who’s ringing and whether they’ve booked before. The card stays after the call, so whoever answered can still book it.</p>
+          <span class="text-link">Caller ID</span>
+        </div>
+        <div class="call-card" aria-hidden="true">
+          <div class="call-top"><span class="call-icon call-icon--ended"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><div><div class="call-title">Incoming call · Main line</div><div class="call-state">Answered elsewhere</div></div></div>
+          <div class="call-body"><div class="call-number">07700 900461</div><div class="call-who">Returning customer · Hannah Clarke · 2 trips</div><span class="call-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 17h14M6 17v2M18 17v2M3 13l2-5a2 2 0 0 1 1.9-1.4h10.2A2 2 0 0 1 19 8l2 5v4H3z"/><circle cx="7.5" cy="13.5" r=".5" fill="currentColor"/><circle cx="16.5" cy="13.5" r=".5" fill="currentColor"/></svg>Book a ride</span></div>
+        </div>
+      </a>
+      <a class="tile tile--third" href="/taxi-sms-notifications/">
+        <div class="tile-text">
+          <h3>Texts and emails</h3>
+          <p>Edit every message, read customers’ replies and block numbers that shouldn’t get texts.</p>
+          <span class="text-link">Texts and emails</span>
+        </div>
+        <div class="tile-shot"><img src="/assets/img/crop-sms-inbox.webp" width="880" height="550" loading="lazy" alt="The CDS inbox with a customer's reply to a driver assigned text"></div>
+      </a>
+      <a class="tile tile--third tile--sky" href="/pco-returns-driver-compliance/">
+        <div class="tile-text">
+          <h3>TfL PCO returns</h3>
+          <p>The weekly driver and vehicle files TfL asks London operators for, ticked and ready to upload.</p>
+          <span class="text-link">PCO returns</span>
+        </div>
+        <div class="tile-shot"><img src="/assets/img/crop-pco-returns.webp" width="880" height="550" loading="lazy" alt="The CDS PCO returns page with drivers and vehicles ticked for the week"></div>
+      </a>
+      <div class="tile tile--half tile--panel" style="background:#fff;border-color:var(--line)">
+        <div class="tile-text">
+          <h3>Accounts and invoices</h3>
+          <p>Business customers book on account at their own rates. Invoice them monthly with VAT, numbered with no gaps, and mark them paid.</p>
+        </div>
+        <ul class="tile-list">
+          <li><span>Fare · Kings Cross to Stansted</span><span>£75.00</span></li>
+          <li><span>Drop-off charge · Stansted Airport</span><span>£7.00</span></li>
+          <li><span>VAT 20% on fares</span><span>£15.00</span></li>
+        </ul>
+      </div>
+      <a class="tile tile--half" href="/pco-returns-driver-compliance/">
+        <div class="tile-text">
+          <h3>Analytics</h3>
+          <p>Trips, revenue, commission and cancellations by hour, day or month, compared with the period before, and drivers side by side.</p>
+          <span class="text-link">Reports and paperwork</span>
+        </div>
+        <div class="tile-shot"><img src="/assets/img/crop-analytics.webp" width="960" height="400" loading="lazy" alt="CDS analytics: a chart of revenue over time against the previous period"></div>
+      </a>
+    </div>
+    <p class="shot-caption">Real CDS screens with sample data.</p>
+  </div>
+</section>
+
+<section class="section section--red">
+  <div class="wrap uk-grid">
+    <div>
+      <h2>Made for the way UK offices work</h2>
+      <p class="lede">CDS is built in London for British minicab and private hire operators.</p>
+      <div class="fare-chip" aria-hidden="true">
+        <span class="fare-chip-route"><small>Fixed fare · Standard</small>N1C ⇄ London Stansted Airport</span>
+        <span class="fare-chip-price">£75.00<small>Plus £7.00 drop-off</small></span>
+      </div>
+    </div>
+    <ul class="uk-list">
+      <li><strong>Postcode fares</strong><span>Fixed prices to a full postcode, a sector, a district or a whole area. The most specific match wins.</span></li>
+      <li><strong>Airports and stations</strong><span>UK airports and terminals, National Rail stations, and 270 London Underground and 45 DLR stations, ready to add.</span></li>
+      <li><strong>TfL weekly returns</strong><span>The two CSV files TfL wants every Monday, built from who actually worked.</span></li>
+      <li><strong>Miles, pounds and VAT</strong><span>Distances in miles, fares in pounds, VAT on invoices, drop-off and parking charges passed on at cost.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Works with what you already have</h2>
+      <p>No hardware to buy and no new phone system. CDS connects to the services your office uses, and you keep the accounts.</p>
+    </div>
+    <div class="works">
+      <div><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 9.5h8M8 12.5h5"/></svg>Text messages</h3><p>Send from a spare Android phone with the free SMS Gateway for Android app, or use SMS8, The SMS Works or Twilio.</p></div>
+      <div><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Email</h3><p>Trip emails from your own address through Gmail, Microsoft 365, Brevo, Amazon SES or any SMTP account. Replies come back to you.</p></div>
+      <div><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Phone lines</h3><p>Caller ID through an extra SIP extension from providers such as Soho66, Onsim or Virgin Media O2 Business. Up to 6 lines.</p></div>
+      <div><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg>Maps</h3><p>Google Maps routes with live traffic and alternative routes. Your office can have its own Google key, so map billing is in your name.</p></div>
+      <div><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>Your website</h3><p>Link to your booking page or add a booking button with one line of code your web designer can paste.</p></div>
+      <div><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 19h20"/></svg>Any computer</h3><p>CDS runs in a modern browser on Windows, Mac or a tablet. Book on one screen and watch the board on another.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sky">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Driver and SMS apps</h2>
+      <p>Downloads for offices on CDS Desktop, and the free app that turns an Android phone into your text gateway.</p>
+    </div>
+    <div class="apps-grid">
+      <div class="app-panel" id="driver-apps">
+        <h2>CDS Driver app</h2>
+        <p>CDS Driver for Android and iPhone works with CDS Desktop. It’s free, with no limit on drivers.</p>
+        <p class="note">In the cloud system, drivers get their jobs by text today, and the cloud driver app is on its way.</p>
+        <div class="stores">
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.cds.cab.driver"><img src="/img/google-play.png" width="160" height="48" alt="Get CDS Driver on Google Play"></a>
+          <a class="store-badge" href="https://apps.apple.com/gb/app/cds-driver/id1368691004"><img src="/img/apple_store.png" width="160" height="48" alt="Download CDS Driver on the App Store"></a>
+        </div>
+      </div>
+      <div class="app-panel" id="sms-apps">
+        <h2>Send texts from an Android phone</h2>
+        <p>SMS Gateway for Android sends your office’s texts from a phone and SIM you already pay for. Cloud offices connect it under Notifications, where CDS walks you through it. CDS Desktop offices use the app’s local server mode.</p>
+        <div class="app-links">
+          <a class="btn btn--ghost btn--small" href="/apps/sms-gateway/app-release-v1-22-0.apk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download the app (APK, v1.22.0)</a>
+          <a class="text-link" href="/sms-gateway.html">Setup guide</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Simple pricing, sized to your fleet</h2>
+      <p>One plan with everything in it. The price depends on how many drivers you have, so a 10-car office doesn’t pay for 100.</p>
+    </div>
+    <div class="pricing">
+      <div class="plan">
+        <h3>Everything included</h3>
+        <p>Priced by the number of drivers in your office. Tell us your fleet size and we’ll send a quote.</p>
+        <ul class="plan-list">
+          <li>Book a ride and the dispatch board</li>
+          <li>Fixed fares, mileage rates and fare grid</li>
+          <li>Online booking page and widget</li>
+          <li>Caller ID on up to 6 lines</li>
+          <li>Editable texts and HTML emails</li>
+          <li>Customer inbox, opt-outs and campaigns</li>
+          <li>Accounts and VAT invoices</li>
+          <li>Driver pay and statements</li>
+          <li>Driver documents and reminders</li>
+          <li>TfL PCO weekly returns</li>
+          <li>Analytics</li>
+          <li>Logins for your dispatchers and admins</li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn--red" href="#contact">Get a quote</a>
+          <a class="btn btn--ghost" href="#contact">Book a demo</a>
+        </div>
+      </div>
+      <div class="onboard">
+        <h3>Getting started</h3>
+        <ol>
+          <li><div><strong>Tell us about your office</strong><span>Fill in the form or message us on WhatsApp. We’ll show you CDS on a call.</span></div></li>
+          <li><div><strong>We set it up with you</strong><span>We create your office, then a 30-minute screen-share connects your SMS and email.</span></div></li>
+          <li><div><strong>Add drivers and fares</strong><span>Add your drivers, vehicles, places and prices, and start taking bookings. The how-to videos cover every step.</span></div></li>
+        </ol>
+        <p style="margin-top:24px;color:#a1a1aa;font-size:.9375rem">You pay your SMS provider for texts directly. With an Android phone and SIM plan, that can be what you already pay.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--panel">
+  <div class="wrap faq-grid">
+    <div>
+      <h2>Questions offices ask</h2>
+      <p class="lede" style="margin-top:20px">More answers on the <a href="/faq/">FAQ page</a>, or ask us directly.</p>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>Do I need to install anything?</summary>
+        <div class="answer"><p>No. CDS is a cloud system: you sign in at app.cabdispatchsystem.com in a modern browser on any computer or tablet. Updates arrive without you doing anything.</p></div>
+      </details>
+      <details>
+        <summary>How do my drivers get their jobs?</summary>
+        <div class="answer"><p>When you assign a job, CDS texts the driver the pickup, drop-off, passenger, luggage and fare. If the job changes or you take it back, they get a text about that too. The cloud driver app is on its way.</p></div>
+      </details>
+      <details>
+        <summary>Can I keep my fixed airport prices?</summary>
+        <div class="answer"><p>Yes. Add your airports, stations and other places, then set prices to postcodes, sectors, districts or whole areas, one by one or in the fare grid. Anything without a fixed fare is priced by your mileage rates.</p></div>
+      </details>
+      <details>
+        <summary>Does CDS do the TfL weekly return?</summary>
+        <div class="answer"><p>CDS builds the two CSV files TfL asks London operators for every Monday, from the drivers and vehicles that worked that week. TfL has no way for software to upload them, so you upload the files on the TfL portal yourself.</p></div>
+      </details>
+      <details>
+        <summary>Can customers pay online?</summary>
+        <div class="answer"><p>Not yet. Customers pay the driver by cash or card, or the trip goes on their company account and you invoice it.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section section--ink" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <h2>Book a demo</h2>
+      <p>Tell us a little about your office and we’ll show you CDS on a call. Or message us now.</p>
+      <ul class="contact-ways">
+        <li><a href="https://wa.me/447778675286"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.5L3 21l2-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg><div><small>WhatsApp message</small><span>+44 7778 675286</span></div></a></li>
+        <li><a href="mailto:cds@deltatechglobal.co.uk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><div><small>Email</small><span>cds@deltatechglobal.co.uk</span></div></a></li>
+        <li><a href="https://app.cabdispatchsystem.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 19h20"/></svg><div><small>Already with us?</small><span>Sign in to CDS</span></div></a></li>
+      </ul>
+    </div>
+    <form class="form" id="contact-form" action="https://formspree.io/f/xbljjnde" method="POST">
+      <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+      <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+      <div class="field"><label for="f-phone">Phone <span class="optional">(optional)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+      <div class="field"><label for="f-office">Office or company</label><input id="f-office" name="office" type="text" autocomplete="organization" required></div>
+      <div class="field field--full">
+        <label for="f-drivers">How many drivers?</label>
+        <select id="f-drivers" name="drivers" required>
+          <option value="">Choose one</option>
+          <option>1–10</option>
+          <option>11–25</option>
+          <option>26–50</option>
+          <option>51–100</option>
+          <option>More than 100</option>
+        </select>
+      </div>
+      <div class="field field--full"><label for="f-message">Anything we should know? <span class="optional">(optional)</span></label><textarea id="f-message" name="message" rows="4" placeholder="Your current system, licensing council, when you’d like to start…"></textarea></div>
+      <div class="hp" aria-hidden="true"><label for="f-gotcha">Leave this empty</label><input id="f-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off"></div>
+      <input type="hidden" name="_subject" value="CDS demo request">
+      <div class="form-status" data-form-status role="status" aria-live="polite"></div>
+      <div class="form-foot">
+        <small>We use your details only to reply to you. See our <a href="/privacy/">privacy notice</a>.</small>
+        <button class="btn btn--red" type="submit">Send</button>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+<!-- shared: footer -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="CDS Cab Dispatch System, home"><svg viewBox="80 50 1760 470" width="82" height="22" role="img" aria-label="CDS"><g fill="#E81A22" fill-rule="evenodd"><path d="M610,72.5 H345 A243,188.75 0 0 0 345,450 H610 V369 H375 A147,106.5 0 0 1 375,156 H610 Z"/><path d="M626,72.5 H985 A225,188.75 0 0 1 985,450 H626 Z M754,156 V369 H985 A109,106.5 0 0 0 985,156 Z"/><path d="M1819,72.5 H1500 A269,189.5 0 0 0 1231,262 H1356 A144,106 0 0 1 1500,156 H1819 Z"/><path d="M1231,450 H1550 A269,188 0 0 0 1819,262 H1694 A144,107 0 0 1 1550,369 H1231 Z"/></g><g fill="#00A9EC"><ellipse cx="1527" cy="262" rx="84" ry="51"/><ellipse cx="244" cy="472" rx="15" ry="8" opacity=".4"/><ellipse cx="319" cy="490" rx="20" ry="10" opacity=".55"/><ellipse cx="419" cy="502" rx="31" ry="17" opacity=".75"/><ellipse cx="531" cy="505" rx="44" ry="23"/></g></svg><span class="brand-name">Cab Dispatch System</span></a>
+        <p>The cloud booking and dispatch system for UK minicab and private hire offices. Serving UK offices since 2010.</p>
+      </div>
+      <div>
+        <h2>Features</h2>
+        <ul><li><a href="/taxi-dispatch-software/">Dispatch board</a></li><li><a href="/minicab-booking-software/">Book a ride</a></li><li><a href="/fixed-fares-software/">Fixed fares</a></li><li><a href="/online-taxi-booking/">Online booking</a></li><li><a href="/taxi-caller-id/">Caller ID</a></li><li><a href="/taxi-sms-notifications/">Texts and emails</a></li><li><a href="/pco-returns-driver-compliance/">PCO returns and paperwork</a></li></ul>
+      </div>
+      <div>
+        <h2>CDS</h2>
+        <ul>
+          <li><a href="/#demo">Watch the demo</a></li>
+          <li><a href="/#pricing">Pricing</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="https://www.youtube.com/@CabDispatchSystem">How-to videos on YouTube</a></li>
+          <li><a href="/#driver-apps">Driver app (CDS Desktop)</a></li>
+          <li><a href="/sms-gateway.html">SMS app setup guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="/#contact">Book a demo</a></li>
+          <li><a href="mailto:cds@deltatechglobal.co.uk">cds@deltatechglobal.co.uk</a></li>
+          <li><a href="https://wa.me/447778675286">WhatsApp +44 7778 675286</a></li>
+          <li><a href="https://app.cabdispatchsystem.com">Sign in to CDS</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2010–2026 Cab Dispatch System. Worcester Park, London.</p>
+      <p><a href="/privacy/" style="color:inherit">Privacy</a> · <button type="button" data-consent-settings>Cookie settings</button></p>
+    </div>
+  </div>
 </footer>
-<!-- Footer Section End -->
-
-<!-- Go To Top Link -->
-<a href="#" class="back-to-top">
-    <i class="lnr lnr-arrow-up"></i>
-</a>
-
-<div id="loader">
-    <div class="spinner">
-        <div class="double-bounce1"></div>
-        <div class="double-bounce2"></div>
-    </div>
+<div class="consent" data-consent hidden role="dialog" aria-modal="false" aria-labelledby="consent-title">
+  <p id="consent-title"><strong>Can we count your visit?</strong> We'd like to use Google Analytics cookies to see which pages help offices most. Nothing is set unless you say yes. <a href="/privacy/">Privacy</a></p>
+  <div class="actions">
+    <button class="btn btn--small" type="button" data-consent-choice="granted">Accept analytics</button>
+    <button class="btn btn--ghost btn--small" type="button" data-consent-choice="denied">No thanks</button>
+  </div>
 </div>
-
-<!-- jQuery first, then Tether, then Bootstrap JS. -->
-<script src="js/jquery-min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.mixitup.js"></script>
-<script src="js/nivo-lightbox.js"></script>
-<script src="js/owl.carousel.js"></script>
-<script src="js/jquery.stellar.min.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/scrolling-nav.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/jquery.slicknav.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/jquery.vide.js"></script>
-<script src="js/jquery.counterup.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/form-validator.min.js"></script>
-<!-- <script src="js/contact-form-script.js"></script> -->
-<script src="js/main.js"></script>
-
-<!-- Place this script at the end of the body tag -->
-<script>
-    var form = document.getElementById("contactForm");
-    
-    async function handleSubmit(event) {
-      event.preventDefault();
-      var status = document.getElementById("msgSubmit");
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-          status.innerHTML = "Thanks for your submission!";
-          form.reset()
-        } else {
-          response.json().then(data => {
-            if (Object.hasOwn(data, 'errors')) {
-              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-            } else {
-              status.innerHTML = "Oops! There was a problem submitting your form"
-            }
-          })
-        }
-      }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
-      });
-    }
-    form.addEventListener("submit", handleSubmit)
-  </script>
-
+<!-- /shared: footer -->
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
   "use strict";
 
   // GA4 measurement ID. While it is the placeholder, nothing is loaded and no banner shows.
-  var GA_ID = "G-XXXXXXXXXX";
+  var GA_ID = "G-FD7YFQ0GYM";
   var CONSENT_KEY = "cds-analytics-consent";
 
   var header = document.querySelector(".site-header");

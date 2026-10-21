@@ -33,11 +33,17 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Collect public files
+        # Everything except repo docs and design notes, which are not part of the site
+        run: |
+          rsync -a --delete \
+            --exclude '_site' --exclude '.git' --exclude '.gitignore' --exclude '.github' --exclude '.impeccable' \
+            --exclude '*.webp.json' --exclude 'PRODUCT.md' --exclude 'DESIGN.md' --exclude 'README.md' \
+            ./ _site/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          path: '_site'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

@@ -1,282 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-GB">
 <head>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118883780-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-118883780-1');
-    </script>
-
-    <!-- favicon section -->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <meta name="keywords" content="cab dispatch system, CDS, Cab Dispatch System, Minicab Management Software, Cab Booking Software, Private Hire Software, Cab Despatch System, Taxi Dispatch, Minicab System, Taxi booking System, Minicab PDA, Cab Management System, Cab System Uk, Cab System London, Taxi Management System, taxi, cabs, Taxi Software, Taxi Booking Software and Apps, Driver PDA App, taxi driver app, Taxi dispatch software, Taxi mobile App, Taxi Booking app and website, Vehicle Tracking, Private Hire Management, Minicab Dispatch System">
-    <meta name="author" content="Cab Dispatch System">
-    <meta name="robots" content="index,follow">
-    <link rel="canonical" href="https://www.cabdispatchsystem.com">
-
-    <meta name="description"
-          content="Cab Dispatch System (CDS) is a comprehensive and a complete Taxi Booking and Dispatch management system. It is fast, efficient and reliable as your business grow."/>
-    <meta name="DC.title"
-          content="Cab Dispatch System (CDS) is a comprehensive and a complete Taxi Booking and Dispatch management system. It is fast, efficient and reliable as your business grow."/>
-
-          <!-- Open Graph / Facebook -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SMS Gateway for Android Setup Guide | CDS Desktop</title>
+<meta name="description" content="Install the SMS Gateway for Android app from its APK and switch on its local server to send your CDS Desktop office&#x27;s text messages from an Android phone.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.cabdispatchsystem.com/sms-gateway.html">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="manifest" href="/favicon/manifest.json">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Cab Dispatch System for Minicab & Private Hire | Manage Your Fleet in the UK">
-<meta property="og:description" content="Looking for a reliable cab dispatch system? Our software simplifies minicab and private hire management in the UK, offering seamless booking, real-time tracking, and efficient dispatch services.">
-<meta property="og:image" content="https://www.cabdispatchsystem.com/img/logo.png">
-<meta property="og:url" content="https://www.cabdispatchsystem.com">
-<meta property="og:site_name" content="Your Cab Dispatch Software">
-
-<!-- Twitter -->
+<meta property="og:site_name" content="Cab Dispatch System (CDS)">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="SMS Gateway for Android Setup Guide | CDS Desktop">
+<meta property="og:description" content="Install the SMS Gateway for Android app from its APK and switch on its local server to send your CDS Desktop office&#x27;s text messages from an Android phone.">
+<meta property="og:url" content="https://www.cabdispatchsystem.com/sms-gateway.html">
+<meta property="og:image" content="https://www.cabdispatchsystem.com/img/cds-demo-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="The CDS Book a ride screen with a fixed fare on the map">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Cab Dispatch System for Minicab & Private Hire | Manage Your Fleet in the UK">
-<meta name="twitter:description" content="Efficient and user-friendly cab dispatch system to manage minicab and private hire services across the UK. Enhance your operations with real-time tracking and automated booking.">
-<meta name="twitter:image" content="https://www.cabdispatchsystem.com/img/logo.png">
-
-    <title>CDS - Cab Dispatch system | Taxi Software, Taxi Booking Software and Apps</title>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/line-icons.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <link rel="stylesheet" href="css/nivo-lightbox.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/slicknav.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
-<style>
-    .store-link {
-        display: inline-block;
-        margin-top: 10px;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s ease-in-out;
+<meta name="twitter:title" content="SMS Gateway for Android Setup Guide | CDS Desktop">
+<meta name="twitter:description" content="Install the SMS Gateway for Android app from its APK and switch on its local server to send your CDS Desktop office&#x27;s text messages from an Android phone.">
+<meta name="twitter:image" content="https://www.cabdispatchsystem.com/img/cds-demo-og.jpg">
+<link rel="preload" href="/assets/fonts/barlow-semi-condensed-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.cabdispatchsystem.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "SMS Gateway for Android setup guide",
+     "item": "https://www.cabdispatchsystem.com/sms-gateway.html"
     }
-
-    .store-link:hover {
-        transform: scale(1.05);
-    }
-
-    .store-img {
-        width: 160px; /* Adjust the width as needed */
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        object-fit: contain;
-    }
-</style>
-
+   ]
+  }
+ ]
+}</script>
 </head>
 <body>
-
-<!-- Header Section Start -->
-<header id="hero-area" data-stellar-background-ratio="0.5">
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a href="index.html" class="navbar-brand"><img class="img-fulid" src="img/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
-                        aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="lnr lnr-menu"></i>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="main-navbar">
-                <ul class="navbar-nav mr-auto w-100 justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#hero-area">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#services">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#features">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#driver-apps">Driver Apps</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#pricing">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#sms-apps">SMS App</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Mobile Menu Start -->
-        <ul class="mobile-menu">
-            <li>
-                <a class="page-scroll" href="index.html#hero-area">Home</a>
-            </li>
-            <li>
-                <a class="page-scroll" href="index.html#services">Services</a>
-            </li>
-            <li>
-                <a class="page-scroll" href="index.html#features">Features</a>
-            </li>
-            <li>
-                <a class="page-scroll" href="index.html#driver-apps">Driver Apps</a>
-            </li>
-            <li>
-                <a class="page-scroll" href="index.html#pricing">Pricing</a>
-            </li>
-            <li>
-                <a class="page-scroll" href="index.html#contact">Contact</a>
-            </li>
-        </ul>
-        <!-- Mobile Menu End -->
-
+<!-- shared: header -->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/" aria-label="CDS Cab Dispatch System, home"><svg viewBox="80 50 1760 470" width="82" height="22" role="img" aria-label="CDS"><g fill="#E81A22" fill-rule="evenodd"><path d="M610,72.5 H345 A243,188.75 0 0 0 345,450 H610 V369 H375 A147,106.5 0 0 1 375,156 H610 Z"/><path d="M626,72.5 H985 A225,188.75 0 0 1 985,450 H626 Z M754,156 V369 H985 A109,106.5 0 0 0 985,156 Z"/><path d="M1819,72.5 H1500 A269,189.5 0 0 0 1231,262 H1356 A144,106 0 0 1 1500,156 H1819 Z"/><path d="M1231,450 H1550 A269,188 0 0 0 1819,262 H1694 A144,107 0 0 1 1550,369 H1231 Z"/></g><g fill="#00A9EC"><ellipse cx="1527" cy="262" rx="84" ry="51"/><ellipse cx="244" cy="472" rx="15" ry="8" opacity=".4"/><ellipse cx="319" cy="490" rx="20" ry="10" opacity=".55"/><ellipse cx="419" cy="502" rx="31" ry="17" opacity=".75"/><ellipse cx="531" cy="505" rx="44" ry="23"/></g></svg><span class="brand-name">Cab Dispatch System</span></a>
+    <nav class="nav" aria-label="Main">
+      <ul class="nav-links">
+        <li><details class="nav-menu"><summary>Features <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></summary><ul class="nav-menu-panel"><li><a href="/taxi-dispatch-software/"><strong>Dispatch board</strong><span>Queue, assign, recall, late-job alerts</span></a></li><li><a href="/minicab-booking-software/"><strong>Book a ride</strong><span>Phone bookings priced on the map</span></a></li><li><a href="/fixed-fares-software/"><strong>Fixed fares</strong><span>Postcodes, airports, stations, fare grid</span></a></li><li><a href="/online-taxi-booking/"><strong>Online booking</strong><span>Your own booking page and widget</span></a></li><li><a href="/taxi-caller-id/"><strong>Caller ID</strong><span>Know who's calling before you answer</span></a></li><li><a href="/taxi-sms-notifications/"><strong>Texts and emails</strong><span>In your words, from your provider</span></a></li><li><a href="/pco-returns-driver-compliance/"><strong>PCO returns and paperwork</strong><span>TfL returns, documents, driver pay, invoices</span></a></li></ul></details></li>
+        <li><a href="/#demo">Demo</a></li>
+        <li><a href="/#pricing">Pricing</a></li>
+        <li><a href="/faq/">FAQ</a></li>
+        <li><a href="/#driver-apps">Apps</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a class="nav-signin" href="https://app.cabdispatchsystem.com">Sign in</a>
+        <a class="btn btn--red btn--small" href="/#contact">Book a demo</a>
+      </div>
     </nav>
-    <!-- Navbar End -->
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="col-md-10">
-                <div class="contents text-center">
-                    <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">SMS App Documentation</h1>
-                    <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Your guide to installing and using the SMS App</p>
-                </div>
-            </div>
+    <details class="menu-toggle">
+      <summary><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menu</span></summary>
+      <nav class="mobile-panel" aria-label="Main menu">
+        <ul>
+          <li class="mobile-group">Features</li>
+          <li><a href="/taxi-dispatch-software/">Dispatch board</a></li><li><a href="/minicab-booking-software/">Book a ride</a></li><li><a href="/fixed-fares-software/">Fixed fares</a></li><li><a href="/online-taxi-booking/">Online booking</a></li><li><a href="/taxi-caller-id/">Caller ID</a></li><li><a href="/taxi-sms-notifications/">Texts and emails</a></li><li><a href="/pco-returns-driver-compliance/">PCO returns and paperwork</a></li>
+          <li class="mobile-group">More</li>
+          <li><a href="/#demo">Watch the demo</a></li>
+          <li><a href="/#pricing">Pricing</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="/#driver-apps">Driver and SMS apps</a></li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn--red" href="/#contact">Book a demo</a>
+          <a class="btn btn--ghost" href="https://app.cabdispatchsystem.com">Sign in</a>
         </div>
-    </div>
+      </nav>
+    </details>
+  </div>
 </header>
-<!-- Header Section End -->
-
-<section id="instruction" class="section">
-    <div class="container my-5">
-        <h2 class="mb-3">Installation from APK</h2>
-        <div class="card mb-4">
-            <div class="card-body">
-                <ol>
-                    <li>Navigate to the <a href="apps/sms-gateway/app-release-v1-22-0.apk">Download SMS App</a>.</li>
-                    <li>Download the latest APK file from the link provided.</li>
-                    <li>Transfer the APK file to your Android device.</li>
-                    <li>On your Android device, go to <strong>Settings</strong> > <strong>Security</strong> (or <strong>Privacy</strong> on some devices).</li>
-                    <li>Enable the <strong>Unknown sources</strong> option to allow installation of apps from sources other than the Play Store.</li>
-                    <li>Use a file manager app to navigate to the location of the downloaded APK file.</li>
-                    <li>Tap on the APK file to start the installation process.</li>
-                    <li>Follow the on-screen prompts to complete the installation.</li>
-                </ol>
-            </div>
-        </div>
-
-        <h2 class="mb-3">Local Server</h2>
-        <div class="card mb-4">
-            <div class="card-body">
-                <p>This mode is ideal for sending messages from a local network:</p>
-                <ol>
-                    <li>Launch the app on your device.</li>
-                    <li>Toggle the <strong>Local Server</strong> switch to the "on" position.</li>
-                    <li>Tap the <strong>Offline</strong> button located at the bottom of the screen to activate the server.</li>
-                    <li>The <strong>Local Server</strong> section will display your device's local and public IP addresses, as well as the credentials for basic authentication.</li>
-                </ol>
-            </div>
-        </div>
+<!-- /shared: header -->
+<main id="main">
+<section class="page-hero">
+  <div class="wrap">
+    <ol class="crumbs"><li><a href="/">Home</a></li><li aria-current="page">SMS Gateway for Android setup guide</li></ol>
+    <h1>SMS Gateway for Android setup guide</h1>
+    <p class="lede">How to install the SMS Gateway for Android app and switch on its local server, for offices on CDS Desktop. Cloud offices connect the app in CDS under Notifications, where the portal walks you through it.</p>
+    <div class="actions">
+      <a class="btn btn--red" href="/apps/sms-gateway/app-release-v1-22-0.apk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download the app (APK, v1.22.0)</a>
     </div>
+  </div>
 </section>
-    
-<!-- Footer Section Start -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <!-- Footer Links -->
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-                <ul class="footer-links">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="index.html#services">Products</a>
-                    </li>
-                    <li>
-                        <a href="index.html#features">Features</a>
-                    </li>
-                    <li>
-                        <a href="index.html#driver-apps">Driver Apps</a>
-                    </li>
-                    <li>
-                        <a href="index.html#sms-apps">SMS Apps</a>
-                    </li>
-                    <li>
-                        <a href="index.html#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-                <div class="copyright">
-                    <p>All copyrights reserved &copy; 2010 - 2024 Cab Dispatch System</p>
-                </div>
-            </div>
-        </div>
+
+<section class="section section--panel" id="instruction">
+  <div class="wrap"><div class="prose">
+    <h2>Installation from APK</h2>
+    <ol>
+      <li>Navigate to the <a href="/apps/sms-gateway/app-release-v1-22-0.apk">Download SMS App</a>.</li>
+      <li>Download the latest APK file from the link provided.</li>
+      <li>Transfer the APK file to your Android device.</li>
+      <li>On your Android device, go to <strong>Settings</strong> &gt; <strong>Security</strong> (or <strong>Privacy</strong> on some devices).</li>
+      <li>Enable the <strong>Unknown sources</strong> option to allow installation of apps from sources other than the Play Store.</li>
+      <li>Use a file manager app to navigate to the location of the downloaded APK file.</li>
+      <li>Tap on the APK file to start the installation process.</li>
+      <li>Follow the on-screen prompts to complete the installation.</li>
+    </ol>
+
+    <h2>Local Server</h2>
+    <p>This mode is ideal for sending messages from a local network:</p>
+    <ol>
+      <li>Launch the app on your device.</li>
+      <li>Toggle the <strong>Local Server</strong> switch to the "on" position.</li>
+      <li>Tap the <strong>Offline</strong> button located at the bottom of the screen to activate the server.</li>
+      <li>The <strong>Local Server</strong> section will display your device's local and public IP addresses, as well as the credentials for basic authentication.</li>
+    </ol>
+  </div>
+  </div>
+</section>
+</main>
+<!-- shared: footer -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="CDS Cab Dispatch System, home"><svg viewBox="80 50 1760 470" width="82" height="22" role="img" aria-label="CDS"><g fill="#E81A22" fill-rule="evenodd"><path d="M610,72.5 H345 A243,188.75 0 0 0 345,450 H610 V369 H375 A147,106.5 0 0 1 375,156 H610 Z"/><path d="M626,72.5 H985 A225,188.75 0 0 1 985,450 H626 Z M754,156 V369 H985 A109,106.5 0 0 0 985,156 Z"/><path d="M1819,72.5 H1500 A269,189.5 0 0 0 1231,262 H1356 A144,106 0 0 1 1500,156 H1819 Z"/><path d="M1231,450 H1550 A269,188 0 0 0 1819,262 H1694 A144,107 0 0 1 1550,369 H1231 Z"/></g><g fill="#00A9EC"><ellipse cx="1527" cy="262" rx="84" ry="51"/><ellipse cx="244" cy="472" rx="15" ry="8" opacity=".4"/><ellipse cx="319" cy="490" rx="20" ry="10" opacity=".55"/><ellipse cx="419" cy="502" rx="31" ry="17" opacity=".75"/><ellipse cx="531" cy="505" rx="44" ry="23"/></g></svg><span class="brand-name">Cab Dispatch System</span></a>
+        <p>The cloud booking and dispatch system for UK minicab and private hire offices. Serving UK offices since 2010.</p>
+      </div>
+      <div>
+        <h2>Features</h2>
+        <ul><li><a href="/taxi-dispatch-software/">Dispatch board</a></li><li><a href="/minicab-booking-software/">Book a ride</a></li><li><a href="/fixed-fares-software/">Fixed fares</a></li><li><a href="/online-taxi-booking/">Online booking</a></li><li><a href="/taxi-caller-id/">Caller ID</a></li><li><a href="/taxi-sms-notifications/">Texts and emails</a></li><li><a href="/pco-returns-driver-compliance/">PCO returns and paperwork</a></li></ul>
+      </div>
+      <div>
+        <h2>CDS</h2>
+        <ul>
+          <li><a href="/#demo">Watch the demo</a></li>
+          <li><a href="/#pricing">Pricing</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="https://www.youtube.com/@CabDispatchSystem">How-to videos on YouTube</a></li>
+          <li><a href="/#driver-apps">Driver app (CDS Desktop)</a></li>
+          <li><a href="/sms-gateway.html">SMS app setup guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="/#contact">Book a demo</a></li>
+          <li><a href="mailto:cds@deltatechglobal.co.uk">cds@deltatechglobal.co.uk</a></li>
+          <li><a href="https://wa.me/447778675286">WhatsApp +44 7778 675286</a></li>
+          <li><a href="https://app.cabdispatchsystem.com">Sign in to CDS</a></li>
+        </ul>
+      </div>
     </div>
+    <div class="footer-bottom">
+      <p>&copy; 2010–2026 Cab Dispatch System. Worcester Park, London.</p>
+      <p><a href="/privacy/" style="color:inherit">Privacy</a> · <button type="button" data-consent-settings>Cookie settings</button></p>
+    </div>
+  </div>
 </footer>
-<!-- Footer Section End -->
-
-<div id="loader">
-    <div class="spinner">
-        <div class="double-bounce1"></div>
-        <div class="double-bounce2"></div>
-    </div>
+<div class="consent" data-consent hidden role="dialog" aria-modal="false" aria-labelledby="consent-title">
+  <p id="consent-title"><strong>Can we count your visit?</strong> We'd like to use Google Analytics cookies to see which pages help offices most. Nothing is set unless you say yes. <a href="/privacy/">Privacy</a></p>
+  <div class="actions">
+    <button class="btn btn--small" type="button" data-consent-choice="granted">Accept analytics</button>
+    <button class="btn btn--ghost btn--small" type="button" data-consent-choice="denied">No thanks</button>
+  </div>
 </div>
-
-<!-- jQuery first, then Tether, then Bootstrap JS. -->
-<script src="js/jquery-min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.mixitup.js"></script>
-<script src="js/nivo-lightbox.js"></script>
-<script src="js/owl.carousel.js"></script>
-<script src="js/jquery.stellar.min.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/scrolling-nav.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/jquery.slicknav.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/jquery.vide.js"></script>
-<script src="js/jquery.counterup.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/form-validator.min.js"></script>
-<script src="js/contact-form-script.js"></script>
-<script src="js/main.js"></script>
-
+<!-- /shared: footer -->
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

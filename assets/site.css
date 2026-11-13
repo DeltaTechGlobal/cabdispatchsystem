@@ -423,6 +423,12 @@ a.tile--ink:hover { color: #fff; }
 .app-panel .label { font-size: 0.8125rem; font-weight: 650; color: var(--muted); display: inline-flex; align-items: center; gap: 8px; }
 @media (max-width: 860px) { .apps-grid { grid-template-columns: 1fr; } }
 
+/* CDS on your computer (/desktop/): the Windows and Mac panels reuse the apps grid */
+.desktop-tip { max-width: 48rem; margin-bottom: 28px; padding: 16px 20px; border-radius: 12px; background: var(--sky); color: var(--ink-2); }
+.install-steps { margin-top: 18px; padding-left: 1.25em; color: var(--ink-2); }
+.install-steps li + li { margin-top: 0.5em; }
+.app-panel .install-note { font-size: 0.9375rem; }
+
 /* Pricing */
 .pricing { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 20px; }
 .plan { background: #fff; border: 1px solid var(--line); border-radius: var(--radius-l); padding: clamp(28px, 4vw, 48px); }

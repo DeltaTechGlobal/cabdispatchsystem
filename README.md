@@ -8,6 +8,7 @@ Every push to `main` deploys the site straight away (`.github/workflows/static.y
 
 - Plain static HTML, CSS and a little JavaScript. There is no build step.
 - `index.html` is the homepage. Each feature page is a folder with an `index.html` inside, so its address ends in a slash, for example `/taxi-dispatch-software/`.
+- `integrations/` lists everything CDS connects to, and `gnet-affiliate-network/` covers GNet partner trips. Both are linked from the header and footer.
 - `faq/`, `privacy/`, `404.html` and `sms-gateway.html` are the other pages. Keep `sms-gateway.html` at that address, because existing links point to it.
 - `assets/site.css` holds the styles, `assets/site.js` the script, `assets/img/` the screenshots and `assets/fonts/` the self-hosted Barlow Semi Condensed font.
 - `apps/`, `video/`, `img/` and `favicon/` hold downloads and older assets. The app privacy policies in `apps/` are linked from the Play Store and App Store listings, so don't move them.

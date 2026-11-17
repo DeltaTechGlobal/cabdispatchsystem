@@ -74,7 +74,7 @@ This site sells CDS, the cloud booking and dispatch system at app.cabdispatchsys
 
 - In business since 2010.
 - The 26-second overview on YouTube (aCkD0enjARo) and the seven "CDS in 20 seconds" videos (playlist PLN9JQ77EhthM). The homepage links to them; thumbnails in `assets/img/video/`. OG image `img/cds-demo-og.jpg`.
-- 50 how-to videos on YouTube (@CabDispatchSystem) in five playlists.
+- 50 how-to videos on YouTube (@CabDispatchSystem) in five playlists. They are for customers only: the site does not link to them or to the channel, so competitors can't browse them from here.
 - Real portal screenshots, which can be captured from the local stack with the demo office.
 - There are no customer names, testimonials, counts or benchmarks. Do not invent any.
 

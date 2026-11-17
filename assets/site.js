@@ -1,4 +1,4 @@
-// CDS marketing site: header, menus, the call-to-cab steps, the contact form and analytics consent.
+// CDS marketing site: header, menus, the call-to-cab steps, the video player, the contact form and analytics consent.
 // No dependencies. Every page works without it; it only adds behaviour.
 (function () {
   "use strict";
@@ -105,6 +105,71 @@
       });
     }
     settingsButtons.forEach(function (button) { button.addEventListener("click", openBanner); });
+  }
+
+  // Video player: links marked data-player play their YouTube video in an overlay on this page.
+  // The player is YouTube's own (privacy-enhanced embed), so plays count as views on the channel.
+  // Nothing from YouTube loads until a visitor opens a video. Without JS, or with a
+  // modifier key or middle click, the link still opens the video on YouTube.
+  var playerLinks = document.querySelectorAll("a[data-player]");
+  if (playerLinks.length && typeof HTMLDialogElement === "function") {
+    var player = document.createElement("dialog");
+    player.className = "player";
+    player.setAttribute("aria-labelledby", "player-title");
+    player.innerHTML =
+      '<div class="player-box">' +
+        '<div class="player-bar">' +
+          '<h2 class="player-title" id="player-title"></h2>' +
+          '<button type="button" class="player-close" aria-label="Close video">' +
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>' +
+          "</button>" +
+        "</div>" +
+        '<div class="player-frame"></div>' +
+        '<a class="player-yt" href="" target="_blank" rel="noopener">Watch on YouTube</a>' +
+      "</div>";
+    document.body.appendChild(player);
+    var playerTitle = player.querySelector(".player-title");
+    var playerFrame = player.querySelector(".player-frame");
+    var playerYt = player.querySelector(".player-yt");
+    var lastTrigger = null;
+
+    var openPlayer = function (link) {
+      var url;
+      try { url = new URL(link.href); } catch (e) { return false; }
+      var id = url.searchParams.get("v");
+      if (!id || !/^[\w-]{11}$/.test(id)) return false;
+      var list = url.searchParams.get("list");
+      var src = "https://www.youtube-nocookie.com/embed/" + id +
+        "?autoplay=1&rel=0&playsinline=1" + (list && /^[\w-]+$/.test(list) ? "&list=" + list : "");
+      var title = link.getAttribute("data-player") || "CDS video";
+      var frame = document.createElement("iframe");
+      frame.src = src;
+      frame.title = title;
+      frame.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+      frame.allowFullscreen = true;
+      frame.referrerPolicy = "strict-origin-when-cross-origin";
+      playerFrame.replaceChildren(frame);
+      playerTitle.textContent = title;
+      playerYt.href = link.href;
+      lastTrigger = link;
+      player.showModal();
+      track("video_open", { video_id: id, video_title: title });
+      return true;
+    };
+
+    playerLinks.forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        if (openPlayer(link)) event.preventDefault();
+      });
+    });
+    player.querySelector(".player-close").addEventListener("click", function () { player.close(); });
+    // A click on the dimmed area around the box closes it.
+    player.addEventListener("click", function (event) { if (event.target === player) player.close(); });
+    player.addEventListener("close", function () {
+      playerFrame.replaceChildren(); // stops playback
+      if (lastTrigger) lastTrigger.focus();
+    });
   }
 
   // Contact form: sent to Formspree in the background, with a plain POST as the no-JS fallback.

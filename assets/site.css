@@ -523,6 +523,10 @@ a.tile--ink:hover { color: #fff; }
 .store-badge:hover { transform: translateY(-2px); }
 .store-badge img { height: 48px; width: auto; }
 .app-panel .app-links { margin-top: auto; padding-top: 28px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.app-panel .app-links--after { margin-top: 0; padding-top: 20px; gap: 12px 24px; }
+.app-panel .stores--top { margin-top: 0; padding-top: 20px; }
+.app-panel .download-alt { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--line); font-size: var(--step-1); }
+.app-panel .download-alt + p { margin-top: 10px; }
 .app-panel .label { font-size: 0.8125rem; font-weight: 650; color: var(--muted); display: inline-flex; align-items: center; gap: 8px; }
 @media (max-width: 860px) { .apps-grid { grid-template-columns: 1fr; } }
 

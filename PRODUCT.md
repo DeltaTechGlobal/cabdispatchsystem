@@ -55,9 +55,8 @@ This site sells CDS, the cloud booking and dispatch system at app.cabdispatchsys
 - Up to 5 business names per office
 
 **The site must not claim:**
-- A cloud driver app (not live yet; drivers get jobs by text)
 - Online card payment (Card means paid in the car)
-- Live GPS (map positions are estimated)
+- Live GPS for drivers without the CDS Driver app (their map positions are estimated from jobs)
 - Automatic upload to TfL (the office uploads the files)
 - A free trial or self sign-up
 - Sending from Outlook.com or Hotmail
